@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bad {
+  background-color: #e8e8e8;
+}
+.better {
+  background-color: #53c5ea;
+}
+.good {
+  background-color: #1d3e7d;
+}
+
+.cover {
+  background: url("/public/images/cover/cover.png") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
