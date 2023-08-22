@@ -9,7 +9,7 @@ const Events = () => {
           <div class="flex flex-col items-center justify-center rounded-xl border-r-6 border-[#F9C200] bg-[#F9C200]/30 p-2 text-black">
             20
             <div class="text-[13px] font-semibold">Feb</div>
-            <div class="text-[14px]">4:00pm</div>
+            <div class="text-[13px]">4:00pm</div>
           </div>
           <div class="p-2 text-black">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -22,7 +22,7 @@ const Events = () => {
           <div class="flex flex-col items-center justify-center rounded-xl border-r-6 border-[#F97700] bg-[#F97700]/30 p-2 text-black">
             20
             <div class="text-[13px] font-semibold">Feb</div>
-            <div class="text-[14px]">4:00pm</div>
+            <div class="text-[13px]">4:00pm</div>
           </div>
           <div class="p-2 text-black">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -35,7 +35,7 @@ const Events = () => {
           <div class="flex flex-col items-center justify-center rounded-xl border-r-6 border-[#00D9CC] bg-[#00D9CC]/30 p-2 text-black">
             20
             <div class="text-[13px] font-semibold">Feb</div>
-            <div class="text-[14px]">4:00pm</div>
+            <div class="text-[13px]">4:00pm</div>
           </div>
           <div class="p-2 text-black">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.

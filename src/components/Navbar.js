@@ -1,7 +1,8 @@
 import React from "react";
 import { useSidebar } from "../context/sidebarcontext";
+import { Link } from "react-router-dom";
 
-const Header = () => {
+const Navbar = () => {
   const { toggleSidebar } = useSidebar();
 
   return (
@@ -11,11 +12,11 @@ const Header = () => {
           <div class="flex items-center gap-2 sm:gap-4">
             {/* <!-- User Area --> */}
             <div class="relative">
-              <a class="flex items-center gap-4" href="#">
+              <Link class="flex items-center gap-4" to="/">
                 <span class="h-12 w-12 rounded-full">
                   <img src="./images/user/user-01.png" alt="User" />
                 </span>
-              </a>
+              </Link>
             </div>
             {/* <!-- User Area --> */}
 
@@ -56,4 +57,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

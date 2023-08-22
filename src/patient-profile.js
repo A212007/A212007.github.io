@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "./components/Sidebar";
-import Header from "./components/Header";
+import Navbar from "./components/Header";
 import { Link } from "react-router-dom";
 
 const PatientProfile = () => {
@@ -14,7 +14,7 @@ const PatientProfile = () => {
 
         <div class="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
           {/* <!-- ===== Header Start ===== --> */}
-          <Header />
+          <Navbar />
           {/* <!-- ===== Header End ===== --> */}
 
           {/* <!-- ===== Main Content Start ===== --> */}

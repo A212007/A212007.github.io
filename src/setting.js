@@ -1,6 +1,6 @@
 import React from 'react'
 import Events from "./components/Events";
-import Header from "./components/Header";
+import Navbar from "./components/Header";
 import Sidebar from "./components/Sidebar";
 
 const setting = () => {

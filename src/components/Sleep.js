@@ -49,10 +49,7 @@ const Sleep = () => {
               <div class="">9am</div>
             </div>
             <div class="mt-4 flex items-end justify-center">
-              <h4
-                id="sleepdata"
-                class="text-title-md font-bold text-black"
-              >
+              <h4 id="sleepdata" class="text-title-md font-bold text-black">
                 10 hr 32 min
               </h4>
             </div>

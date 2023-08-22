@@ -5,10 +5,6 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const { isSidebarOpen, setSidebarOpen } = useSidebar(false);
-  //   const toggleSideBar = () => {
-  //     // setSidebarOpen((prevState) => !prevState.isSidebarOpen);
-  //     setSidebarOpen(true);
-  //   };
   const { toggleSidebar } = useSidebar();
   return (
     <div>
@@ -75,9 +71,9 @@ const Sidebar = () => {
 
                 {/* <!-- Menu Item Journal --> */}
                 <li>
-                  <a
+                  <Link
                     class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-white duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-                    href="journal.html"
+                    to="/journal"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +96,7 @@ const Sidebar = () => {
                       ></path>
                     </svg>
                     Journal
-                  </a>
+                  </Link>
                 </li>
                 {/* <!-- Menu Item Journal --> */}
 
@@ -135,7 +131,7 @@ const Sidebar = () => {
                 <li>
                   <a
                     class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-white duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-                    href="community.html"
+                    href="/community"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

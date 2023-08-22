@@ -1,6 +1,6 @@
 import React from "react";
 import Events from "./components/Events";
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import { Link } from "react-router-dom";
 
@@ -14,7 +14,7 @@ const EditProfile = () => {
         {/* <!-- ===== Content Area Start ===== --> */}
         <div class="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
           {/* <!-- ===== Header Start ===== --> */}
-          <Header />
+          <Navbar />
 
           {/* <!-- ===== Main Content Start ===== --> */}
           <main class="pt-10 sm:px-5">
