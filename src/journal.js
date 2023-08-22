@@ -1,5 +1,4 @@
 import React from "react";
-import Events from "./components/Events";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import { useState } from "react";
@@ -68,7 +67,13 @@ const Journal = () => {
 
                 {active === 1 && (
                   <>
-                    <div className="">Hello</div>
+                    <div className="">
+                      {/* Notes Wrapper  */}
+                      <div className="flex">
+                        <div className=""></div>
+                        <div className="bg-gray-200 flex flex-col gap-1 rounded-y-xl"></div>
+                      </div>
+                    </div>
                   </>
                 )}
 
