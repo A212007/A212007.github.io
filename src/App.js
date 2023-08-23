@@ -1,10 +1,10 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Calendar from "./calendar";
-import Profile from "./profile";
+import Calendar from "./calendar/calendar";
+import Profile from "./profile/profile";
 import Home from "./home";
-import EditProfile from "./edit-profile";
-import Journal from "./journal";
+import EditProfile from "./edit-profile/edit-profile";
+import Journal from "./journal/journal";
 
 function App() {
   return (

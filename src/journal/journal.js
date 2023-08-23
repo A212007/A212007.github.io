@@ -1,7 +1,8 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 import { useState } from "react";
+import JournalEvents from "../components/JuornalEvents";
 
 const Journal = () => {
   const [active, setActive] = useState(1);
@@ -10,12 +11,12 @@ const Journal = () => {
   };
   return (
     <div>
-      {" "}
+      <div className=""></div>
       <div class="flex h-screen overflow-hidden cover">
-        {/* <!-- ===== Content Area Start ===== --> */}
+        {/* Side Menu  */}
         <Sidebar />
         <div class="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
-          {/* <!-- ===== Main Content Start ===== --> */}
+          {/* Navbar */}
           <Navbar />
           <main className="bg-white mt-10 rounded-t-3xl">
             <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
@@ -67,19 +68,32 @@ const Journal = () => {
 
                 {active === 1 && (
                   <>
-                    <div className="">
-                      {/* Notes Wrapper  */}
-                      <div className="flex">
-                        <div className=""></div>
-                        <div className="bg-gray-200 flex flex-col gap-1 rounded-y-xl"></div>
-                      </div>
-                    </div>
+                    {/* Notes Wrapper */}
+                    <NoteBox
+                      profileImage="images/user/user-01.png"
+                      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+                      numquam similique. Accusamus molestias quaerat laborum. Id, repudiandae
+                      rem voluptas voluptatum rerum at accusamus magnam non, blanditiis
+                      placeat quia deserunt? Numquam reiciendis animi suscipit quam corrupti
+                      non ab ducimus ipsa ea?"
+                      time="February 20, 8:12 AM"
+                    />
+                    <NoteBox
+                      profileImage="images/user/user-01.png"
+                      image="./images/notes/img-long.jpg"
+                      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+                      numquam similique. Accusamus molestias quaerat laborum. Id, repudiandae
+                      rem voluptas voluptatum rerum at accusamus magnam non, blanditiis
+                      placeat quia deserunt? Numquam reiciendis animi suscipit quam corrupti
+                      non ab ducimus ipsa ea?"
+                      time="February 20, 8:12 AM"
+                    />
                   </>
                 )}
 
                 {active === 2 && (
                   <>
-                    <div className="">Hello World</div>
+                    <JournalEvents />
                   </>
                 )}
               </div>
@@ -92,3 +106,37 @@ const Journal = () => {
 };
 
 export default Journal;
+
+const NoteBox = ({ profileImage, description, image, time }) => {
+  return (
+    <div className="flex gap-3 items-end my-5 ">
+      <div className="">
+        {/* User profile Image  */}
+        <div class="flex items-center gap-4">
+          <span class="h-10 w-10 rounded-full">
+            <img src={`/${profileImage}`} alt="User" />
+          </span>
+        </div>
+      </div>
+      <div className="">
+        {/* Note Box */}
+        <div className="bg-gray-200 flex flex-col gap-1 rounded-y-xl w-96 h-auto p-5 rounded-2xl rounded-bl-none">
+          {/* Description and Image  */}
+          {image && (
+            <div className="">
+              <img
+                src={`/${image}`}
+                alt="Note_Image"
+                className="object-contain w-64 h-auto rounded-2xl"
+              />
+            </div>
+          )}
+          {description}
+        </div>
+
+        {/* Date */}
+        <span className="text-sm text-gray-500">{time}</span>
+      </div>
+    </div>
+  );
+};

@@ -9,7 +9,7 @@ const Events = () => {
       color: "#F9C200",
       date: ["12"],
       time: "11:00",
-      month: "man",
+      month: "jan",
     },
     {
       name: "Taher",
@@ -18,7 +18,7 @@ const Events = () => {
       color: "#F97700",
       date: "30",
       time: "12:00",
-      month: "Meb",
+      month: "feb",
     },
     {
       name: "Huzefa",
@@ -49,32 +49,6 @@ const Events = () => {
             </div>
           );
         })}
-
-        {/* <div class="my-3 flex rounded-xl border bg-bodydark1">
-          <div class="flex flex-col items-center justify-center rounded-xl border-r-6 border-[#F97700] bg-[#F97700]/30 p-2 text-black">
-            20
-            <div class="text-[13px] font-semibold">Feb</div>
-            <div class="text-[13px]">4:00pm</div>
-          </div>
-          <div class="p-2 text-black">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consectetur, enim. Odit numquam sit repellat, ullam sequi earum
-            maxime quae totam?
-          </div>
-        </div>
-
-        <div class="my-3 flex rounded-xl border bg-bodydark1">
-          <div class="flex flex-col items-center justify-center rounded-xl border-r-6 border-[#00D9CC] bg-[#00D9CC]/30 p-2 text-black">
-            20
-            <div class="text-[13px] font-semibold">Feb</div>
-            <div class="text-[13px]">4:00pm</div>
-          </div>
-          <div class="p-2 text-black">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consectetur, enim. Odit numquam sit repellat, ullam sequi earum
-            maxime quae totam?
-          </div>
-        </div> */}
       </div>
     </div>
   );

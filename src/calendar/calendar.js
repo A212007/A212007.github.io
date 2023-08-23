@@ -1,7 +1,7 @@
 import React from "react";
-import Events from "./components/Events";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
+import Events from "../components/Events";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 
 const Calendar = () => {
   return (
