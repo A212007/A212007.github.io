@@ -38,8 +38,8 @@ const Events = () => {
         {events.map((item, index) => {
           return (
             <div key={index} class="my-3 flex rounded-xl border items-center">
-              <div class="flex flex-col items-center justify-center rounded-xl border-r-6 border-[#F9C200] bg-[#F9C200]/30 p-2 text-black">
-                <span className="font-bold">{item.date}</span>
+              <div class="flex flex-col items-center justify-center rounded-xl w-20 border-r-6 border-[#F9C200] bg-[#F9C200]/30 p-2 text-black">
+                <span className="font-medium text-2xl">{item.date}</span>
                 <div class="text-[13px] first-letter:capitalize font-semibold">
                   {item.month}
                 </div>

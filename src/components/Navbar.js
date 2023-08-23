@@ -16,7 +16,7 @@ const Navbar = () => {
             {/* <!-- Hamburger Toggle BTN --> */}
             <div class="flex items-center gap-3">
               <button
-                class="z-99999 block rounded-sm p-1.5 lg:hidden"
+                class="z-99999 block rounded-sm p-1.5 "
                 onClick={toggleSidebar}
               >
                 <span class="relative block h-6 w-6 scale-125 cursor-pointer">

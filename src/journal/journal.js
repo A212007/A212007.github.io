@@ -44,7 +44,7 @@ const Journal = () => {
                 </div>
 
                 {/* Toggle Button  */}
-                <div class="flex flex-row gap-5 justify-center items-center py-3">
+                <div class="flex flex-row gap-5 justify-around items-center py-3">
                   <button
                     onClick={() => toggleActive(1)}
                     className={`font-bold text-2xl ${
@@ -110,6 +110,11 @@ export default Journal;
 const NoteBox = ({ profileImage, description, image, time }) => {
   return (
     <div className="flex gap-3 items-end my-5 ">
+      {/* Search Bar  */}
+      <div className="bg-gray-200 p-2 ">
+        <input type="text" placeholder="Search"/>
+      </div>
+
       <div className="">
         {/* User profile Image  */}
         <div class="flex items-center gap-4">

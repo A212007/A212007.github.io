@@ -32,11 +32,11 @@ const JournalEvents = () => {
   ];
   return (
     <div>
-      <div class="col-span-12 rounded-3xl bg-white px-5 pt-7.5 pb-5 sm:px-7.5 xl:col-span-8">
+      <div class="col-span-12 rounded-3xl bg-white h-screen px-5 pt-7.5 pb-5 sm:px-7.5 xl:col-span-8">
         {events.map((item, index) => {
           return (
             <div key={index} class="my-3 flex items-center">
-              <div class="bg-[#001640] flex items-center">
+              <div class="bg-[#001640] w-screen flex items-center">
                 <div class="flex flex-col items-center justify-center bg-[#F89739] p-2 text-black w-20">
                   <span className="font-medium text-white text-2xl">
                     {item.date}
